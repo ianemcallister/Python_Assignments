@@ -1,2 +1,2 @@
-# Python_Assignments
+# Python Assignments
 Tech Academy Python Assignments
