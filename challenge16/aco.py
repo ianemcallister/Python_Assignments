@@ -31,6 +31,7 @@ def ant_colony_optimization(num_iterations):
     # Initialize best path and distance
     best_distance = float('inf')
     best_path = []
+    best_iteration = -1 # Initialize the best_iteration variable
 
     for iteration in range(num_iterations):
         # Initialize ant paths and distances
@@ -76,13 +77,15 @@ def ant_colony_optimization(num_iterations):
         if ant_distances[min_distance_idx] < best_distance:
             best_distance = ant_distances[min_distance_idx]
             best_path = ant_paths[min_distance_idx]
+            best_iteration = iteration # Update the best_iteration
         
-    return best_path, best_distance
+    return best_path, best_distance, best_iteration
 
 # Run the Ant Colony Optimization algorithm
 num_iterations = 250 # Number of iterations
-best_path, best_distance = ant_colony_optimization(num_iterations)
+best_path, best_distance, best_iteration = ant_colony_optimization(num_iterations)
 
 # Display the best path and distance
 print('Here is the best path: ', best_path)
 print('Here is the best distance: ', best_distance)
+print("Iteration with the best distance:", best_iteration) # New line
