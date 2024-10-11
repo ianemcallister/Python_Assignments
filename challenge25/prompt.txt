@@ -1,0 +1,10 @@
+You are an experienced front-end web developer with 10 years of experience. 
+Generate a static HTML website that meets the following requirements:
+1) do not include any css or javascript (inline or otherwise)
+2) The topic of the website is the five most popular flowers on earth (roses, tulips, lilies, sunflowers, and orchids)
+3) a nav bar that includes HOME, ROSES, TULIPS, LILLIES, SUNFLOWERS, ORCHIDS, ABOUT US, and CONTACTS must be present
+4) When the user clicks an item listed on the navbar, scroll them to the relevent section.
+5) For each flower section, write a two paragraph description about the flower, with a little bit of information about it's history
+6) For each flower section, include a picture of the flower
+7) For the ABOUT US section, write a two paragraph description about a made-up company that is interested in flowers and their history
+8) for the CONTACT section, create a basic contact form.
